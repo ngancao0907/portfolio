@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: #3bd5d5;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+}
+
+.project {
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #3bd5d5;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.about-container {
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.about-container {
+    display: flex; 
+    align-items: center; 
+    gap: 20px; 
+}
+
+.about-image {
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    width: 250px; 
+    height: 250px; 
+    border-radius: 50%; 
+    overflow: hidden; 
+    border: 5px solid var(--green); 
+}
+
+.about-image img {
+    width: 100%; 
+    height: 100%;
+    object-fit: cover; 
+}
+
+.image-name {
+    margin-top: 10px; 
+    color: var(--gray);
+    text-align: center;
+    margin-right:100px;
+}
+
+.hobbies-section {
+    padding: 10px;
+}
+
+.hobbies-header {
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+.hobbies-image {
+    background-color: #3bd5d5;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.hobbies-image figure {
+    text-align: center; 
+    margin: 0;
+}
+
+.hobbies-image img {
+    height: 150px; 
+    width: auto;
+}
+
+.hobbies-image figcaption {
+    color: white;
+    font-size: 1.5em;
+    margin-top: 5px;
+}
+
+#projects {
+    margin: 20px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    margin-bottom: 10px; 
+    border: none;
+}
+
+.text {
+    flex: 1; 
+    margin-right: 20px; 
+}
+
+.image img {
+    max-width: 500px; 
+    height: auto;
+    margin-left: 300px;
+}
+
+button {
+    margin-top: 10px;
+}
+
+a {
+    text-decoration: none; 
+    color: #000000;
+}
+
+
+h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.5em;
+}
+
+.text p {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 2.5em;
+}
+
+#achievements {
+    margin: 20px;
+}
+
+.project {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    margin-bottom: 20px;
+}
+
+.image {
+    margin-right: 20px; 
+}
+
+.image img {
+    max-width: 300px; 
+    height: auto; 
+}
+
+.text {
+    flex: 1; 
+}
+button {
+    margin-top: 10px;
+}
+
+.contact {
+    font-size: 1.5em;
+}
+
+/* CSS cho hình ảnh */
+.hobbies-image figure {
+    opacity: 0; /* Ẩn hình ảnh ban đầu */
+    transform: translateX(-10px); /* Đặt hình ảnh ra ngoài bên trái */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out; /* Hiệu ứng chuyển đổi */
+}
+
+.hobbies-image figure.visible {
+    opacity: 1; /* Hiện hình ảnh khi thêm class visible */
+    transform: translateX(0); /* Di chuyển hình ảnh vào vị trí ban đầu */
+}
+
